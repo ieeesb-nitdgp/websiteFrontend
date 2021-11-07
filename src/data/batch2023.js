@@ -36,6 +36,15 @@ const Batch2023 = [
       mail: "",
    },
    {
+      name: "Bishwajit Ghosh",
+      post: "Senior Executive Member",
+      img: require("../media/batch2023/Bishwajit.jpeg"),
+      fb: "",
+      insta: "",
+      linkedin: "https://www.linkedin.com/in/bishwajit-ghosh-6a896b1a3/",
+      mail: "",
+   },
+   {
       name: "Chetan Sheoran",
       post: "Senior Executive Member",
       img: require("../media/batch2023/chetan.png"),
