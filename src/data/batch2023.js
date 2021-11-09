@@ -99,15 +99,6 @@ const Batch2023 = [
       mail: "",
    },
    {
-      name: "Sayan Mondal",
-      post: "Senior Executive Member",
-      img: require("../media/batch2023/Sayan1st.png"),
-      fb: "https://www.facebook.com/akathesayan/",
-      insta: "https://www.instagram.com/akathesayan/",
-      linkedin: "https://www.linkedin.com/in/sa-y-an/",
-      mail: "",
-   },
-   {
       name: "Vaishali Barua",
       post: "Senior Executive Member",
       img: require("../media/batch2023/Vaishali1st.png"),
