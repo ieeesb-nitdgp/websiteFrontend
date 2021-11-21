@@ -18,15 +18,6 @@ const Batch2024 = [
     mail: "",
   },
   {
-    name: "Arshia Biswas",
-    post: "Junior Executive Member",
-    img: require("../media/batch2024/ArshiaBiswas.jpg"),
-    fb: "https://www.facebook.com/arshia.b.18",
-    insta: "https://www.instagram.com/___reiko__/?hl=en",
-    linkedin: "https://www.linkedin.com/in/arshia-biswas-12285a208",
-    mail: "",
-  },
-  {
     name: "Durbar Chakrabarty",
     post: "Junior Executive Member",
     img: require("../media/batch2024/DurbarChakrabarty.png"),
