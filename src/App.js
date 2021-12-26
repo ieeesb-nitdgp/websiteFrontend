@@ -40,8 +40,8 @@ function App() {
 			  <div className="">
 					<Switch>
 						<Route exact path={["/"]} component={Home} />
-					  <Route exact path={["/events"]} component={Events} />
-					  <Route exact path={["/events/:id"]} component={EventDetails} />
+					  <Route exact path="/events" component={Events} />
+					  <Route exact path="/events/:event" component={EventDetails} />
 					  <Route exact path={["/members"]} component={Member} />
 					  <Route exact path={["/alumni"]} component={Alumni} />
 					</Switch>
