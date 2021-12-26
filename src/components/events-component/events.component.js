@@ -38,7 +38,7 @@ function Events() {
                 </div>
                 <div
                   onClick={()=>history.push(`/events/${post.event}`, post)}
-                  className="btn btn-primary"
+                  className="btn btn-primary mb-3 w-75 mx-auto rounded-pill"
                 >
                   details
                 </div>
