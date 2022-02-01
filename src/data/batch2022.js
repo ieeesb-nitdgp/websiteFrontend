@@ -29,7 +29,7 @@ const Batch2022 = [
    {
       name: "Aman Agarwal",
       post: "Treasurer",
-      img: require("../media/batch2022/Aman2nd.png"),
+      img: require("../media/batch2022/Aman2nd.jpg"),
       fb: "https://www.facebook.com/aman.agarwal.564813",
       insta: "https://www.instagram.com/aman._agarwal._/",
       linkedin:

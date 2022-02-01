@@ -146,12 +146,12 @@ export default class Contact extends Component {
 	  	 					</div>
 	  	 					<div>ieeesb.nitdgp@gmail.com</div>
   	 					</li>
-  	 					<li className="d-flex align-items-center">
+  	 					{/* <li className="d-flex align-items-center">
   	 						<div className="icon-cover">
   	 							<img src={phone} className="icon-fluid" />
   	 						</div>
 	  	 					<div>+919476211060</div>
-  	 					</li>
+  	 					</li> */}
 		  	 		</ul>
 	  	 		  </div>
 	  	 			

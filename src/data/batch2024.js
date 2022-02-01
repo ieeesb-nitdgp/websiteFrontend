@@ -81,15 +81,6 @@ const Batch2024 = [
     mail: "",
   },
   {
-    name: "Sharmistha Karmakar",
-    post: "Junior Executive Member",
-    img: require("../media/batch2024/SharmisthaKarmakar.png"),
-    fb: "https://www.facebook.com/sharmistha.karmakar.9883",
-    insta: "https://www.instagram.com/karmakar_sharmistha/",
-    linkedin: "https://www.linkedin.com/in/sharmistha-karmakar-485928208",
-    mail: "",
-  },
-  {
     name: "Sreemoyee Sadhukhan",
     post: "Junior Executive Member",
     img: require("../media/batch2024/SreemoyeeSadhukhan.png"),
