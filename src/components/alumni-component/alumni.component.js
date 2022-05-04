@@ -4,6 +4,7 @@ import "./members.css";
 import Batch2019 from "../../data/batch2019";
 import Batch2020 from "../../data/batch2020";
 import Batch2021 from "../../data/batch2021";
+import Batch2022 from "../../data/batch2022";
 
 export default class Alumni extends Component {
    constructor(props) {
@@ -15,6 +16,7 @@ export default class Alumni extends Component {
          isactive2019: true,
          isactive2020: false,
          isactive2021: false,
+         isactive2022: false,
          imageHash: Date.now(),
          dockstatus: false,
          togglestring: ">",
@@ -27,13 +29,15 @@ export default class Alumni extends Component {
          isactive2019: false,
          isactive2020: false,
          isactive2021: false,
+         isactive2022: false,
       });
       if (year == 2019) {
          this.setState({
             activedata: Batch2019,
             isactive2019: true,
          });
-      } else if (year == 2020) {
+      } 
+      else if (year == 2020) {
          this.setState({
             activedata: Batch2020,
             isactive2020: true,
@@ -43,6 +47,12 @@ export default class Alumni extends Component {
          this.setState({
             activedata: Batch2021,
             isactive2021: true,
+         });
+      }
+      else if (year == 2022) {
+         this.setState({
+            activedata: Batch2022,
+            isactive2022: true,
          });
       }
    }
@@ -106,6 +116,15 @@ export default class Alumni extends Component {
                   >
                      {" "}
                      Batch of 2021{" "}
+                  </button>
+                  <button
+                     className={`btn pl-3 pr-3 btn-primary ${
+                        this.state.isactive2022 ? "active btn-secondary" : " "
+                     }`}
+                     onClick={() => this.activate(2022)}
+                  >
+                     {" "}
+                     Batch of 2022{" "}
                   </button>
                </div>
                <div className="row m-1 ">

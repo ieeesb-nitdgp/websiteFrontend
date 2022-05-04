@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import { Link, Redirect, Switch, Route } from "react-router-dom";
 import "../common.css";
 import "./members.css";
-import Batch2022 from "../../data/batch2022";
+// import Batch2022 from "../../data/batch2022";
 import Batch2023 from "../../data/batch2023";
 import Batch2024 from "../../data/batch2024";
+import Batch2025 from "../../data/batch2025";
 
 import nkr from "../../media/faculty/NKRsir.jpg";
 import ac from "../../media/faculty/ACsir.jpg";
@@ -16,10 +17,11 @@ export default class Memebrs extends Component {
       this.activate = this.activate.bind(this);
       this.toggleDockClass = this.toggleDockClass.bind(this);
       this.state = {
-         activedata: Batch2022,
-         isactive2022: true,
-         isactive2023: false,
+         activedata: Batch2023,
+         // isactive2022: true,
+         isactive2023: true,
          isactive2024: false,
+         isactive2025: false,
          imageHash: Date.now(),
          dockstatus: false,
          togglestring: ">",
@@ -29,24 +31,25 @@ export default class Memebrs extends Component {
    componentDidMount() {}
    activate(year) {
       this.setState({
-         isactive2022: false,
+         // isactive2022: false,
          isactive2023: false,
          isactive2024: false,
+         isactive2025: false,
       });
-      if (year == 2023) {
-         this.setState({
-            activedata: Batch2023,
-            isactive2023: true,
-         });
-      } else if (year == 2024) {
+      if (year == 2024) {
          this.setState({
             activedata: Batch2024,
             isactive2024: true,
          });
+      } else if (year == 2025) {
+         this.setState({
+            activedata: Batch2025,
+            isactive2025: true,
+         });
       } else {
          this.setState({
-            activedata: Batch2022,
-            isactive2022: true,
+            activedata: Batch2023,
+            isactive2023: true,
          });
       }
    }
@@ -156,37 +159,38 @@ export default class Memebrs extends Component {
             <div className="container mt-4">
                <div className="button-wrapper d-flex justify-content-around">
                   <button
-                     className={`btn pl-3 pr-3 btn-primary ${
-                        this.state.isactive2022 ? "active btn-secondary" : ""
+                    className={`btn pl-3 pr-3 btn-primary ${
+                        this.state.isactive2023 ? "active btn-secondary" : ""
                      }`}
-                     onClick={() => this.activate(2022)}
+                     onClick={() => this.activate(2023)}
                   >
+
                      {" "}
                      Final Year{" "}
                   </button>
                   <button
                      className={`btn pl-3 pr-3 btn-primary ${
-                        this.state.isactive2023 ? "active btn-secondary" : ""
+                        this.state.isactive2024 ? "active btn-secondary" : ""
                      }`}
-                     onClick={() => this.activate(2023)}
+                     onClick={() => this.activate(2024)}
                   >
                      {" "}
                      Third Year{" "}
                   </button>
                   <button
                      className={`btn pl-3 pr-3 btn-primary ${
-                        this.state.isactive2024 ? "active btn-secondary" : ""
+                        this.state.isactive2025 ? "active btn-secondary" : ""
                      }`}
-                     onClick={() => this.activate(2024)}
+                     onClick={() => this.activate(2025)}
                   >
                      {" "}
                      Second Year{" "}
                   </button>
                   {/* <button
                      className={`btn pl-3 pr-3 btn-primary ${
-                        this.state.isactive2024 ? "active btn-secondary" : ""
+                        this.state.isactive2025 ? "active btn-secondary" : ""
                      }`}
-                     onClick={() => this.activate(2024)}
+                     onClick={() => this.activate(2025)}
                   >
                      {" "}
                      First Year{" "}
@@ -200,36 +204,36 @@ export default class Memebrs extends Component {
                   >
                      <button
                         className={`pl-3 pr-3 ${
-                           this.state.isactive2022 ? "active-nav-link" : ""
+                           this.state.isactive2023 ? "active-nav-link" : ""
                         }`}
-                        onClick={() => this.activate(2022)}
+                        onClick={() => this.activate(2023)}
                      >
                         {" "}
                         Final Year{" "}
                      </button>
                      <button
                         className={`pl-3 pr-3 ${
-                           this.state.isactive2023 ? "active-nav-link" : ""
+                           this.state.isactive2024 ? "active-nav-link" : ""
                         }`}
-                        onClick={() => this.activate(2023)}
+                        onClick={() => this.activate(2024)}
                      >
                         {" "}
                         Third Year{" "}
                      </button>
                      <button
                         className={`pl-3 pr-3 ${
-                           this.state.isactive2024 ? "active-nav-link" : ""
+                           this.state.isactive2025 ? "active-nav-link" : ""
                         }`}
-                        onClick={() => this.activate(2024)}
+                        onClick={() => this.activate(2025)}
                      >
                         {" "}
                         Second Year{" "}
                      </button>
                      {/* <button
                         className={`pl-3 pr-3 ${
-                           this.state.isactive2024 ? "active-nav-link" : ""
+                           this.state.isactive2025 ? "active-nav-link" : ""
                         }`}
-                        onClick={() => this.activate(2024)}
+                        onClick={() => this.activate(2025)}
                      >
                         {" "}
                         First Year{" "}
