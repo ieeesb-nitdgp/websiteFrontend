@@ -12,6 +12,7 @@ const Navbar = () => {
           <p><a href="#home">Home</a></p>
           <p><a href="#wcs">About Us</a></p>
           <p><a href="#home">Contact Us</a></p>
+          <p><a href="#home">Team</a></p>
         </div>
       </div>
       <div className="cs__navbar-menu">
@@ -24,6 +25,7 @@ const Navbar = () => {
             <p><a href="#home">Home</a></p>
             <p><a href="#wcs">About Us</a></p>
             <p><a href="#home">Contact Us</a></p>
+            <p><a href="#home">Team</a></p>
           </div>
         </div>
         )}
